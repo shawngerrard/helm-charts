@@ -5,6 +5,38 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 1.1.0
+    created: "2022-01-24T23:37:12.557875001Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Chart for the nginx Ingress controller
+    digest: 246944e4d899827fc566aec37f85423f41304d0bfd32d7bbd7d69aafef98daf7
+    home: https://github.com/bitnami/charts/tree/master/bitnami/nginx-ingress-controller
+    icon: https://bitnami.com/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/bitnami/bitnami-docker-nginx-ingress-controller
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/shawngerrard/helm-charts/releases/download/nginx-ingress-controller-9.0.10/nginx-ingress-controller-9.0.10.tgz
+    version: 9.0.10
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 1.1.0
     created: "2022-01-21T15:47:01.1334211+13:00"
     name: nginx-ingress-controller
     urls:
@@ -62,4 +94,4 @@ entries:
     urls:
     - https://github.com/shawngerrard/helm-charts/charts/wordpress-12.2.3.tgz
     version: 12.2.3
-generated: "2022-01-24T22:05:05.04818014Z"
+generated: "2022-01-24T23:37:12.557920605Z"
