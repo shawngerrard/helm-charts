@@ -34,4 +34,4 @@ name: wordpress
 sources:
 - https://github.com/bitnami/bitnami-docker-wordpress
 - https://wordpress.org/
-version: 12.2.3
+version: 12.2.4
