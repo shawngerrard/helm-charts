@@ -422,12 +422,12 @@ livenessProbe:
     ##   value: https
     ##
     httpHeaders:
-    - name: X-Forwarded-Proto
-      value: https
-    - name: X-Forwarded-Host
-      value: {{ .host }}
-    - name: Host
-      value: {{ .host }}
+      - name: X-Forwarded-Proto
+        value: https
+      - name: X-Forwarded-Host
+        value: '{{ .host }}'
+      - name: Host
+        value: '{{ .host }}'
   initialDelaySeconds: 120
   periodSeconds: 10
   timeoutSeconds: 5
