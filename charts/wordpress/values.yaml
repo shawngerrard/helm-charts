@@ -422,7 +422,7 @@ livenessProbe:
     ##   value: https
     ##
     httpHeaders: []
-  initialDelaySeconds: 120
+  initialDelaySeconds: 180
   periodSeconds: 10
   timeoutSeconds: 5
   failureThreshold: 6
