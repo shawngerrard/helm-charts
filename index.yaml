@@ -47,6 +47,47 @@ entries:
       category: CMS
     apiVersion: v2
     appVersion: 5.8.2
+    created: "2022-01-26T02:02:50.175111522Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Web publishing platform for building blogs and websites.
+    digest: 16972796e24389eae0ed4d70b80a99025912add9bb7d0e6df3d6fc913f1529a8
+    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    - https://wordpress.org/
+    urls:
+    - https://github.com/shawngerrard/helm-charts/releases/download/wordpress-12.2.8/wordpress-12.2.8.tgz
+    version: 12.2.8
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 5.8.2
     created: "2022-01-25T22:21:59.555824369Z"
     dependencies:
     - condition: mariadb.enabled
@@ -176,4 +217,4 @@ entries:
     urls:
     - https://github.com/shawngerrard/helm-charts/charts/wordpress-12.2.3.tgz
     version: 12.2.3
-generated: "2022-01-25T22:21:59.555852369Z"
+generated: "2022-01-26T02:02:50.175136222Z"
