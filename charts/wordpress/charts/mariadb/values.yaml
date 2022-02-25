@@ -69,8 +69,8 @@ diagnosticMode:
 ##
 image:
   registry: docker.io
-  repository: bitnami/mariadb
-  tag: 10.5.13-debian-10-r0
+  repository: mariadb
+  tag: 10.7
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -265,7 +265,7 @@ primary:
   ## @param primary.podSecurityContext.fsGroup Group ID for the mounted volumes' filesystem
   ##
   podSecurityContext:
-    enabled: true
+    enabled: false
     fsGroup: 1001
   ## MariaDB primary container security context
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
@@ -273,7 +273,7 @@ primary:
   ## @param primary.containerSecurityContext.runAsUser User ID for the MariaDB primary container
   ##
   containerSecurityContext:
-    enabled: true
+    enabled: false
     runAsUser: 1001
   ## MariaDB primary container's resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
@@ -603,7 +603,7 @@ secondary:
   ## @param secondary.podSecurityContext.fsGroup Group ID for the mounted volumes' filesystem
   ##
   podSecurityContext:
-    enabled: true
+    enabled: false
     fsGroup: 1001
   ## MariaDB secondary container security context
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
@@ -611,7 +611,7 @@ secondary:
   ## @param secondary.containerSecurityContext.runAsUser User ID for the MariaDB secondary container
   ##
   containerSecurityContext:
-    enabled: true
+    enabled: false
     runAsUser: 1001
   ## MariaDB secondary container's resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/

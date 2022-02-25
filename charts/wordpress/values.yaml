@@ -68,8 +68,8 @@ diagnosticMode:
 ##
 image:
   registry: docker.io
-  repository: bitnami/wordpress
-  tag: 5.8.2-debian-10-r16
+  repository: wordpress
+  tag: latest
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -384,7 +384,7 @@ containerPorts:
 ## @param podSecurityContext.fsGroup Set WordPress pod's Security Context fsGroup
 ##
 podSecurityContext:
-  enabled: true
+  enabled: false
   fsGroup: 1001
 ## Configure Container Security Context (only main container)
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-container
@@ -393,7 +393,7 @@ podSecurityContext:
 ## @param containerSecurityContext.runAsNonRoot Set WordPress container's Security Context runAsNonRoot
 ##
 containerSecurityContext:
-  enabled: true
+  enabled: false
   runAsUser: 1001
   runAsNonRoot: true
 ## Configure extra options for WordPress containers' liveness and readiness probes
