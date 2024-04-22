@@ -1,0 +1,42 @@
+#+title: helm-charts
+#+description: Repository to hold all Helm charts used in my deployments.
+
+* Installation
+
+To install ~Helm~ in ~Ubuntu~, we can use the following code:
+
+#+begin_src bash
+# Download the Helm package
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+
+# Make the install script executable
+chmod 700 get_helm.sh
+
+# Run the script
+./get_helm.sh
+
+# Verify installation
+helm version
+#+end_src
+
+* Pull Helm charts to local storage
+
+I usually store helm charts locally to control upstream source updates.
+
+** From Helm Hub
+
+To download and then unpack the latest version of a chart from the official Helm Hub repository, use the following code:
+
+#+begin_src bash
+# Pull the helm chart from helm hub and untar it
+helm pull --untar <app name E.G nginx-ingress>
+#+end_src
+
+** From specific repository
+
+To download and then unpack the latest version of a chart from a specific repository, use the following code:
+
+#+begin_src bash
+# Pull the helm chart from an example repo and untar it
+helm pull --repo https://example.com/charts nginx-ingress --untar
+#+end_src
